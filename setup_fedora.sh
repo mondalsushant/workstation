@@ -6,22 +6,23 @@
 
 # Sushant's Fedora Setup
 # ======================
-# > Let's copy Torvalds. I CRAVE FOR STABILITY. I WANT TO STOP SWITCHING DISTROS.
-# > You have to change many things to make this script work for you.
-# > I was too lazy to write the commands for the manual GUI stuff, if anyone can provide them, I will be honored.
+# > Let's copy Torvalds. I CRAVE STABILITY. I WANT TO STOP SWITCHING DISTROS.
+# > You have to change a lot of things to make this script work for you.
+# > I was too lazy to write the commands for the manual GUI stuff; if anyone can provide them, I will be honored.
 # > Coming from an AlmaLinux guy, switching to Fedora was quite easy.
 # Edited using: GNU nano, version 8.7.1
 # Author: Sushant Mondal <contact@sushantmondal.com>
 
 # Manually change this using the KDE Plasma GUI
 # =============================================
-# * Username: During setup, use your first name only, all lowercase. For example, `sushant`.
+# * Username: During setup, use your first name only, all lowercase. For example, `sushant`
 # * Date format @ Digital Clock: `MM/DD/YY (Short date)` -> `dddd, MMMM d, yyyy (Long date)`
 # * Panel Height @ Panel Configuration: `43` -> `40`
 # * Opacity @ Panel Configuration: `Adaptive` -> `Opaque`
 # * Global Theme @ System Settings: `Breeze` -> `Fedora Light`
 # * Icon @ Application Launcher Settings: `plasma-symbolic` -> `fedora-logo-icon`
-# * Icon group @ Panel: Disable programs to be grouped.
+# * Icon group @ Panel: Disable programs from being grouped.
+# * Pointers @ System Settings: `Breeze Dark` -> `Breeze Light`
 # Note: Reorder this section alphabetically later.
 
 # For Git
@@ -78,6 +79,7 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 dnf check-update &&
 sudo dnf install code # or code-insiders
 
+# Though `nano` should already come pre-installed.
 dnf install -y nano neovim
 
 # Install the Google Chrome browser.
