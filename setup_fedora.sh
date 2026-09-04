@@ -10,7 +10,7 @@
 # > You have to change a lot of things to make this script work for you.
 # > I was too lazy to write the commands for the manual GUI stuff; if anyone can provide them, I will be honored.
 # > Coming from an AlmaLinux guy, switching to Fedora was quite easy.
-# Edited using: GNU nano, version 8.7.1
+# Edited using: micro 2.0.16-dev.77 (393cf248) [compiled on September 04, 2026]
 # Author: Sushant Mondal <contact@sushantmondal.com>
 
 # Manually change this using the KDE Plasma GUI
@@ -90,7 +90,7 @@ cd micro
 make build
 mv micro /usr/local/bin # optional
 
-# Though `nano` should already come pre-installed.
+# Though `nano` should already be pre-installed.
 dnf install -y nano neovim
 
 # Install the Google Chrome browser.
