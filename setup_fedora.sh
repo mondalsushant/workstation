@@ -98,6 +98,9 @@ dnf install -y fedora-workstation-repositories
 dnf config-manager setopt google-chrome.enabled=1
 dnf install -y google-chrome-stable
 
+# Drawing
+dnf install -y gimp inkscape
+
 ###
 
 # Apply the changes cleanly.
