@@ -104,4 +104,4 @@ dnf install -y gimp inkscape
 ###
 
 # Apply the changes cleanly.
-dnf reboot
+reboot
