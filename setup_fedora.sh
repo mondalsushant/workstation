@@ -23,12 +23,20 @@
 # * Icon @ Application Launcher Settings: `plasma-symbolic` -> `fedora-logo-icon`
 # * Icon group @ Panel: Disable programs from being grouped.
 # * Pointers @ System Settings: `Breeze Dark` -> `Breeze Light`
+# * Window Management @ Desktop Effects @ System Settings: Uncheck `Overview` to disable the
+#   top-left hot corner
+# * Shake Pointer @ Accessibility @ System Settings: Disable `Shake pointer to find it:`
 # Note: Reorder this section alphabetically later.
 
 # For Git
 # =======
 # * Import `public.asc` and `private.asc` GPG keys for Git.
 # * SSH keys instead of HTTPS.
+
+# Source -> HTML
+# ==============
+# Use gvim, pygments, or source-highlight for generating syntax-highlighted HTML of your source
+# files.
 
 ###
 
@@ -46,7 +54,7 @@ hostnamectl set-hostname home.sushantmondal.com
 # Dependencies
 # ============
 
-dnf install -y clang-format
+dnf install -y clang-format python3 python3-pip python3-pygments source-highlight
 
 # Perf
 # ----
