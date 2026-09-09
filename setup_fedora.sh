@@ -93,7 +93,7 @@ make build
 mv micro /usr/local/bin # optional
 
 # Though `nano` should already be pre-installed.
-dnf install -y nano neovim
+dnf install -y gvim nano neovim
 
 # Install the Google Chrome browser.
 dnf install -y fedora-workstation-repositories
