@@ -46,6 +46,8 @@ hostnamectl set-hostname home.sushantmondal.com
 # Dependencies
 # ============
 
+dnf install -y clang-format
+
 # Perf
 # ----
 dnf install -y snapd
