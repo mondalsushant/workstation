@@ -54,7 +54,7 @@ hostnamectl set-hostname home.sushantmondal.com
 # Dependencies
 # ============
 
-dnf install -y clang-format python3 python3-pip python3-pygments source-highlight
+dnf install -y clang-format fuse-sshfs python3 python3-pip python3-pygments source-highlight
 
 # Perf
 # ----
