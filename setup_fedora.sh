@@ -54,7 +54,11 @@ hostnamectl set-hostname home.sushantmondal.com
 # Dependencies
 # ============
 
-dnf install -y clang-format fuse-sshfs python3 python3-pip python3-pygments source-highlight
+# `virtualbox`
+# * Download `virtualbox` from: https://www.virtualbox.org/wiki/Linux_Downloads (.rpm)
+# * Install `virtualbox` using: sudo dnf install -y <downloaded-.rpm-file-path>
+
+dnf install -y clang-format fuse-sshfs ktorrent python3 python3-pip python3-pygments source-highlight
 
 # Perf
 # ----
