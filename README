@@ -1,0 +1,66 @@
+Configuration, dotfiles, and scripts of Sushant's workstation
+=============================================================
+
+Replicate Sushant's workstation configuration.
+
+Environment
+-----------
+
+Operating systems which were used to run this repository successfully:
+
++----------------------------------------------------------+
+| NAME          | VERSION                         | ARCH   |
+|---------------|---------------------------------|--------|
+| Fedora Linux  | 44 (KDE Plasma Desktop Edition) | x86_64 |
++----------------------------------------------------------+
+
+Notes:
+* `cat /etc/os-release` @ {NAME,VERSION}.
+* `lscpu` @ {ARCH}.
+* Arrange all the rows in alphabetical order @ {NAME}.
+* Running this on any other OS than the above listed ones, and then reporting back to me with the
+  results to expand the above table would be very appreciated.
+
+Install
+-------
+
+```bash
+mkdir -p /tmp/sushant
+cd /tmp/sushant
+git clone https://github.com/mondalsushant/workstation.git mondalsushant-workstation
+cd mondalsushant-workstation/src/scripts
+chmod +x main.sh
+./main.sh
+```
+
+Uninstall
+---------
+
+```bash
+rm -rf /tmp/sushant
+```
+
+Author
+------
+
+See CREDITS.
+
+License
+-------
+
+Copyright © 2026 Sushant Mondal <contact@sushantmondal.com>
+
+This repository is licensed under the 'GPL-3.0-only' license.
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version. This program is distributed in the hope that it will
+be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have
+received a copy of the GNU General Public License along with this program. If not, see
+<https://www.gnu.org/licenses/>.
+
+Website
+-------
+
+Visit https://www.sushantmondal.com/ for more information.

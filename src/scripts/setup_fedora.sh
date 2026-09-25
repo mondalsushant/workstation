@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
 # SPDX-FileCopyrightText: © 2026 Sushant Mondal <contact@sushantmondal.com>
+#
+# @@@@@@@@@@@@@@@@
+# !! Deprecated !!
+# @@@@@@@@@@@@@@@@
 
 ###
 
@@ -8,10 +12,9 @@
 # ======================
 # > Let's copy Torvalds. I CRAVE STABILITY. I WANT TO STOP SWITCHING DISTROS.
 # > You have to change a lot of things to make this script work for you.
-# > I was too lazy to write the commands for the manual GUI stuff; if anyone can provide them, I will be honored.
+# > I was too lazy to write the commands for the manual GUI stuff; if anyone can provide them, I
+# >   will be honored.
 # > Coming from an AlmaLinux guy, switching to Fedora was quite easy.
-# Edited using: micro 2.0.16-dev.77 (393cf248) [compiled on September 04, 2026]
-# Author: Sushant Mondal <contact@sushantmondal.com>
 
 # Manually change this using the KDE Plasma GUI
 # =============================================
@@ -35,14 +38,12 @@
 
 # Source -> HTML
 # ==============
-# Use gvim, pygments, or source-highlight for generating syntax-highlighted HTML of your source
-# files.
+# Use `gvim`, `pygments`, or `source-highlight` for generating syntax-highlighted HTML of your
+# source files.
 
 ###
 
-##########################
 # !! RUN THIS WITH `sudo`.
-##########################
 
 dnf update -y
 
