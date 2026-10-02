@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# SPDX-FileCopyrightText: © 2026 Sushant Mondal <contact@sushantmondal.com>
+# SPDX-FileCopyrightText: (C) 2026 Sushant Mondal <contact@sushantmondal.com>
 
 TOKEN="${SLT_PROVIDER_TOKEN:?Set SLT_PROVIDER_TOKEN environment variable first.}"
 set -euo pipefail

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# SPDX-FileCopyrightText: © 2026 Sushant Mondal <contact@sushantmondal.com>
+# SPDX-FileCopyrightText: (C) 2026 Sushant Mondal <contact@sushantmondal.com>
 
 bash cockpit.sh
 bash install_dnf.sh

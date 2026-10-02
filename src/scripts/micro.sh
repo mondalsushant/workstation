@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# SPDX-FileCopyrightText: © 2026 Sushant Mondal <contact@sushantmondal.com>
+# SPDX-FileCopyrightText: (C) 2026 Sushant Mondal <contact@sushantmondal.com>
 #
 # Refs: https://github.com/micro-editor/micro#building-from-source
 

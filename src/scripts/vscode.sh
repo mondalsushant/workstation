@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# SPDX-FileCopyrightText: © 2026 Sushant Mondal <contact@sushantmondal.com>
+# SPDX-FileCopyrightText: (C) 2026 Sushant Mondal <contact@sushantmondal.com>
 #
 # Refs: https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux
 

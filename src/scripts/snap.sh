@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# SPDX-FileCopyrightText: © 2026 Sushant Mondal <contact@sushantmondal.com>
+# SPDX-FileCopyrightText: (C) 2026 Sushant Mondal <contact@sushantmondal.com>
 
 ln -sf /var/lib/snapd/snap /snap
 systemctl enable --now snapd.socket
