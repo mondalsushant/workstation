@@ -1,5 +1,6 @@
 clang-format
 cockpit
+cockpit-podman
 exiftool
 fedora-workstation-repositories
 firewalld
@@ -16,6 +17,7 @@ ktorrent
 kwriteconfig6
 lm_sensors
 make
+mesa-vulkan-drivers
 nano
 neovim
 plasma-breeze-common
@@ -26,4 +28,5 @@ python3-pygments
 snapd
 source-highlight
 vim
+vulkan-loader
 xargs
