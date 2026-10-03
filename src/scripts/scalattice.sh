@@ -4,6 +4,7 @@
 
 set -euo pipefail
 TOKEN="${SLT_PROVIDER_TOKEN:?Set SLT_PROVIDER_TOKEN environment variable first.}"
+dnf install -y curl
 
 # Only works on AMD processors. When NVIDIA-based machines will face problems, send a patch!
 dnf install -y mesa-vulkan-drivers vulkan-loader
