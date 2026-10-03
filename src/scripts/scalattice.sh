@@ -4,6 +4,10 @@
 
 set -euo pipefail
 TOKEN="${SLT_PROVIDER_TOKEN:?Set SLT_PROVIDER_TOKEN environment variable first.}"
+
+# Only works on AMD processors. When NVIDIA-based machines will face problems, send a patch!
+dnf install -y mesa-vulkan-drivers vulkan-loader
+
 id -u scallatice &>/dev/null || useradd -m -s /bin/bash scallatice
 usermod -aG video,render scallatice
 su - scallatice -c "
@@ -11,7 +15,7 @@ su - scallatice -c "
   scalattice-agent status
 "
 
-# Works from `scalattice-agent 1.1.133
+# Works with `scalattice-agent 1.1.133` or later.
 loginctl enable-linger scallatice
 su - scallatice -c "XDG_RUNTIME_DIR=/run/user/\$(id -u scallatice) systemctl --user start scalattice-agent"
 su - scallatice -c "XDG_RUNTIME_DIR=/run/user/\$(id -u scallatice) systemctl --user status scalattice-agent" || true
