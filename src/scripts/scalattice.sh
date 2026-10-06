@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 # SPDX-FileCopyrightText: (C) 2026 Sushant Mondal <contact@sushantmondal.com>
+#
+# Run this script with `chmod +x scalattice.sh && sudo SLT_PROVIDER_TOKEN="<scalattice-machine-token>" ./scalattice.sh`.
 
 set -euo pipefail
 TOKEN="${SLT_PROVIDER_TOKEN:?Set SLT_PROVIDER_TOKEN environment variable first.}"
