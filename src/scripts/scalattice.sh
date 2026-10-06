@@ -19,7 +19,10 @@ su - scalattice -c "
 "
 
 # Works with `scalattice-agent 1.1.133` or later.
+loginctl terminate-user scalattice 2>/dev/null || true
+sleep 5
 loginctl enable-linger scalattice
+sleep 5
 su - scalattice -c "XDG_RUNTIME_DIR=/run/user/\$(id -u scalattice) systemctl --user start scalattice-agent"
 su - scalattice -c "XDG_RUNTIME_DIR=/run/user/\$(id -u scalattice) systemctl --user status scalattice-agent" || true
 su - scalattice -c "XDG_RUNTIME_DIR=/run/user/\$(id -u scalattice) scalattice-agent status"
