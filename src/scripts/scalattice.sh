@@ -9,15 +9,15 @@ dnf install -y curl
 # Only works on AMD processors. When NVIDIA-based machines will face problems, send a patch!
 dnf install -y mesa-vulkan-drivers vulkan-loader
 
-id -u scallatice &>/dev/null || useradd -m -s /bin/bash scallatice
-usermod -aG video,render scallatice
-su - scallatice -c "
+id -u scalattice &>/dev/null || useradd -m -s /bin/bash scalattice
+usermod -aG video,render scalattice
+su - scalattice -c "
   curl -fsSL https://scalattice.cloud/install/agent | sh -s -- --token '$TOKEN'
   scalattice-agent status
 "
 
 # Works with `scalattice-agent 1.1.133` or later.
-loginctl enable-linger scallatice
-su - scallatice -c "XDG_RUNTIME_DIR=/run/user/\$(id -u scallatice) systemctl --user start scalattice-agent"
-su - scallatice -c "XDG_RUNTIME_DIR=/run/user/\$(id -u scallatice) systemctl --user status scalattice-agent" || true
-su - scallatice -c "XDG_RUNTIME_DIR=/run/user/\$(id -u scallatice) scalattice-agent status"
+loginctl enable-linger scalattice
+su - scalattice -c "XDG_RUNTIME_DIR=/run/user/\$(id -u scalattice) systemctl --user start scalattice-agent"
+su - scalattice -c "XDG_RUNTIME_DIR=/run/user/\$(id -u scalattice) systemctl --user status scalattice-agent" || true
+su - scalattice -c "XDG_RUNTIME_DIR=/run/user/\$(id -u scalattice) scalattice-agent status"
