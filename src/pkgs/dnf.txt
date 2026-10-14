@@ -9,6 +9,7 @@ gimp
 git
 golang
 google-chrome-stable
+gtypist
 gvim
 inkscape
 konsole
@@ -20,6 +21,7 @@ make
 mesa-vulkan-drivers
 nano
 neovim
+pipx
 plasma-breeze-common
 psensor
 python3
